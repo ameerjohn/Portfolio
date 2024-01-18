@@ -1,0 +1,81 @@
+{
+  "objective": "Aspiring React Developer with a passion for creating dynamic and intuitive user experiences. Eager to contribute technical proficiency in React, along with a solid foundation in JavaScript and front-end development, towards a forward-thinking organization. Seeking a challenging role that encourages continuous learning, collaboration, and innovation in the ever-evolving landscape of web development.",
+  "personal_details": {
+    "name": "Rijas Afradi",
+    "contact_no": "+91-7502820750",
+    "mail": "rijrijas@gmail.com",
+    "github": "https://github.com/Rijas2004",
+    "linkedin": "www.linkedin.com/in/rijas-afradi-160b56218"
+  },
+  "education": [
+    {
+      "school": "SFS Matric Higher Secondary school",
+      "percentage": "76.4%",
+      "studied": "SSLC",
+      "place": "Pudukkottai"
+    },
+    {
+      "school": "SFS Matric Higher Secondary school",
+      "percentage": "74.6%",
+      "studied": "HSC",
+      "place": "Pudukkottai"
+    },
+    {
+      "college": "Jamal Mohamed College",
+      "university": "Bharathidasan University",
+      "percentage": "Pursuing",
+      "studied": "Bachelor of Science in Computer Science (BSc CS)"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "JavaScript Certification",
+      "domain": "Web Development",
+      "platform": "Sololearn",
+      "finished": "Jan'2023"
+    },
+    {
+      "name": "ReactJS Certification",
+      "domain": "Web Development",
+      "platform": "Sololearn",
+      "finished": "Feb'2023"
+    }
+  ],
+  "achievements": [
+    {
+      "college": "St.Joseph college",
+      "desc": "Participated in technical symposium at St.Joseph College, Trichy and awarded web development TECHX 2023 by holding third position."
+    }
+  ],
+  "technical_skills": {
+    "programming_languages": ["HTML", "CSS", "Javascript"],
+    "programming_tools": ["VScode"],
+    "framework": ["React"]
+  },
+  "projects": [
+    {
+      "id": "p1",
+      "name": "Portfolio",
+      "client-used": {
+        "language": "Javascript",
+        "library": ["React.js", "Font-Awesome"]
+      },
+      "description": "This portfolio website which you are seeing now is build by using React.js and material ui for materials and icons. If you want to contact me, you can contact me through the page located on the bottom of these site.",
+      "src_url": "https://github.com/Rijas2004/Portfolio"
+    },
+    {
+      "id": "p2",
+      "name": "Food Ordering Site",
+      "description": "An application created with ReactJS and connected to Firebase for storage.",
+      "src_url": "https://github.com/Rijas2004/FoodOrder",
+      "site_url": "https://fullmeals.netlify.app"
+    },
+    {
+      "id": "p3",
+      "name": "Task Storager",
+      "description": "A small task storing app which is used for creating tasks and managing it.",
+      "src_url": "https://github.com/Rijas2004/TaskManager",
+      "site_url": "https://taskstorager.netlify.app"
+    }
+  ]
+}
