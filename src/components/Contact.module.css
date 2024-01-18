@@ -1,0 +1,98 @@
+.contact {
+  color: lightgrey;
+}
+
+.title {
+  text-align: center;
+}
+
+.title span {
+  font-size: 24px;
+  color: #ea4343;
+  font-weight: 700;
+}
+
+.title h3 {
+  color: #fff;
+  font-size: 60px;
+  line-height: 1.3;
+}
+
+.contact .contact_details {
+  float: left;
+  display: flex;
+  margin-top: 60px;
+}
+
+.contact_details .left {
+  padding: 20px 0 0 100px;
+  width: 50%;
+  padding-right: 50px;
+}
+
+.contact_details .left .text {
+  font-size: 140%;
+  max-width: 450px;
+  margin-bottom: 38px;
+}
+
+.email {
+  float: left;
+  position: relative;
+  padding-left: 75px;
+}
+
+.email_icon {
+  color: #fff;
+  font-size: 3.5rem !important;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.email span {
+  color: #fff;
+  position: relative;
+  bottom: -30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.email h3 {
+  font-size: 30px;
+  color: #ea4343;
+}
+
+.form {
+  padding: 10px 100px 40px 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .contact_details {
+    display: flow;
+    margin-top: 0;
+  }
+
+  .contact_details .left {
+    padding: 0 0 0 20px;
+    width: 90%;
+  }
+
+  .contact_details .left .text {
+    font-size: 125%;
+    margin-bottom: 15px;
+  }
+
+  .title h3 {
+    font-size: 45px;
+  }
+
+  .email h3 {
+    font-size: 26px;
+  }
+
+  .form {
+    padding: 10px 15px 40px 15px;
+  }
+}

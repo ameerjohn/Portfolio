@@ -1,0 +1,38 @@
+#about {
+  position: relative;
+  top: 17rem;
+}
+
+#works {
+  float: left;
+  padding: 135px 0 0;
+}
+
+#contact {
+  margin-top: 75rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #about {
+    top: -12rem;
+  }
+
+  #works {
+    padding: 0;
+    margin-top: -32%;
+  }
+
+  #contact {
+    margin-top: 70rem;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 800px) {
+  #works {
+    margin-top: -80%;
+  }
+
+  #contact {
+    margin-top: 30rem;
+  }
+}
