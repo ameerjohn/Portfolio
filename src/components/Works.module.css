@@ -70,7 +70,7 @@
   .worksection .worklist ul li {
     width: 100%;
     float: none;
-    padding-left: 5px;
+    padding: 0 5px;
   }
 
   .main_title h3 {
