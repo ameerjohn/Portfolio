@@ -53,17 +53,17 @@ const About = () => {
               I'm <span>Rijas</span>
             </h3>
             <h3>
-              Web <span>Designer</span>
+              Web <span>Developer</span>
             </h3>
           </div>
           <div className={classes.text}>
             <p>
-              Hi! I'm Rijas. I am a Frontend developer, and I'm very passionate
+              Hi! I'm Rijas. I am a Full Stack developer, and I'm very passionate
               and dedicated to my work
             </p>
             <p>
               I'm from Pudukkottai, and I'm pursuing BSc Computer Science at
-              Jamal Mohamed College(Autonomous) in Trichy. I'm a React
+              Jamal Mohamed College(Autonomous) in Trichy. I'm a MERN Stack
               developer. I create successful websites that are fast, user
               friendly, and easy to use.
             </p>

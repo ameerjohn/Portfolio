@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
 import { motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll";
 import {
   MailOutline,
   Facebook,
@@ -51,7 +51,7 @@ const HomePage = () => {
           <span className={classes.hello}>Hello, I'm</span>
           <h3 className={classes.name}>Rijas</h3>
           <span className={classes.job}>
-            Frontend <span>Developer</span>
+            MERN STACK <span>Developer</span>
           </span>
           <div className={classes.btnnav}>
             <ScrollLink className={classes.hellobtn} to="contact" smooth={true}>

@@ -61,8 +61,6 @@ hr {
 
 .btnnav .hellobtn .mailicon {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   width: 18px;
   height: 18px;
   color: #fff;

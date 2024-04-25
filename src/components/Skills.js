@@ -6,6 +6,9 @@ import html from "../assets/Images/Skills/html.png";
 import css from "../assets/Images/Skills/css.png";
 import js from "../assets/Images/Skills/js.png";
 import reactjs from "../assets/Images/Skills/reactjs.png";
+import nodejs from "../assets/Images/Skills/nodejs.png";
+import expressjs from "../assets/Images/Skills/expressjs.png";
+import mongodb from "../assets/Images/Skills/mongodb.png";
 
 const Skills = () => {
   const skillData = [
@@ -13,6 +16,9 @@ const Skills = () => {
     { src: css, alt: "CSS", label: "CSS" },
     { src: js, alt: "JAVASCRIPT", label: "JavaScript" },
     { src: reactjs, alt: "REACTJS", label: "ReactJS" },
+    { src: nodejs, alt: "NODEJS", label: "NodeJS" },
+    { src: expressjs, alt: "EXPRESSJS", label: "ExpressJS" },
+    { src: mongodb, alt: "MONGODB", label: "MongoDB" },
   ];
 
   const skillsContainerVariants = {

@@ -1,5 +1,5 @@
 {
-  "objective": "Aspiring React Developer with a passion for creating dynamic and intuitive user experiences. Eager to contribute technical proficiency in React, along with a solid foundation in JavaScript and front-end development, towards a forward-thinking organization. Seeking a challenging role that encourages continuous learning, collaboration, and innovation in the ever-evolving landscape of web development.",
+  "objective": "Aspiring MERN Stack Developer with a keen interest in crafting responsive and user-friendly web applications. Equipped with foundational skills in MongoDB, Express.js, React, and Node.js. Seeking an opportunity to leverage expertise in the MERN stack to contribute to innovative projects and collaborate with like-minded professionals in a dynamic work environment. Passionate about continuous learning and growth in the field of web development.",
   "personal_details": {
     "name": "Rijas Afradi",
     "contact_no": "+91-7502820750",
@@ -50,7 +50,8 @@
   "technical_skills": {
     "programming_languages": ["HTML", "CSS", "Javascript"],
     "programming_tools": ["VScode"],
-    "framework": ["React"]
+    "framework": ["React.JS","Node.JS", "Express.JS"],
+    "database": ["MongoDB"]
   },
   "projects": [
     {

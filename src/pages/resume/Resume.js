@@ -27,7 +27,7 @@ const Resume = () => {
       <div className={classes.header}>
         <div>
           <h1 style={{ margin: 0 }}>{resume?.personal_details.name}</h1>
-          <h4 style={{ margin: "8px 0" }}>React Frontend Developer</h4>
+          <h4 style={{ margin: "8px 0" }}>MERN Stack Developer</h4>
         </div>
         <div>
           <div>
@@ -95,6 +95,14 @@ const Resume = () => {
               <ul className={classes.list}>
                 {resume?.technical_skills.framework.map((frm, index) => (
                   <li key={index}>{frm}</li>
+                ))}
+              </ul>
+            </Grid>
+            <Grid item xs={4}>
+              <div className={classes.list_heading}>Database:</div>
+              <ul className={classes.list}>
+                {resume?.technical_skills.database.map((dtb, index) => (
+                  <li key={index}>{dtb}</li>
                 ))}
               </ul>
             </Grid>
