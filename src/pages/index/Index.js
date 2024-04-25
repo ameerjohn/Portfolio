@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 
 import "./Index.css";
@@ -31,37 +30,3 @@ const Index = () => {
 };
 
 export default Index;
-=======
-import React from "react";
-
-import "./Index.css";
-import HomePage from "../../components/HomePage";
-import About from "../../components/About";
-import Skills from "../../components/Skills";
-import Works from "../../components/Works";
-import Contact from "../../components/Contact";
-
-const Index = () => {
-  return (
-    <div>
-      <section id="home">
-        <HomePage />
-      </section>
-      <section id="about">
-        <About />
-      </section>
-      <section id="skills">
-        <Skills />
-      </section>
-      <section id="works">
-        <Works />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
-    </div>
-  );
-};
-
-export default Index;
->>>>>>> bc0554239610b5dea7e6be59b72fec36bcded6b7
