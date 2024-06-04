@@ -77,6 +77,13 @@
       "description": "A small task storing app which is used for creating tasks and managing it.",
       "src_url": "https://github.com/Rijas2004/TaskManager",
       "site_url": "https://taskstorager.netlify.app"
+   },
+    {
+      "id": "p4",
+      "name": "Chatt Next",
+      "description": "A MERN stack Website in which the user can login or signup and can chat with other users.Used MERN and Socket and zustand for practice.",
+      "src_url": "https://github.com/Rijas2004/chatnextt",
+      "site_url": "https://chattnext.onrender.com"
     }
   ]
 }
