@@ -81,7 +81,7 @@
     {
       "id": "p4",
       "name": "Chatt Next",
-      "description": "A MERN stack Website in which the user can login or signup and can chat with other users.Used MERN and Socket and zustand for practice.",
+      "description": "A MERN stack Website in which the user can login or signup and can chat with other users.Used MERN and Socket and zustand for practice.      NOTE: Initially the loading time of the website will be slow because of the deploying website.",
       "src_url": "https://github.com/Rijas2004/chatnextt",
       "site_url": "https://chattnext.onrender.com"
     }
