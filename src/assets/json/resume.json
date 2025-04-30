@@ -84,6 +84,13 @@
       "description": "A MERN stack Website in which the user can login or signup and can chat with other users.Used MERN and Socket and zustand for practice.      NOTE: Initially the loading time of the website will be slow because of the deploying website.",
       "src_url": "https://github.com/Rijas2004/chatnextt",
       "site_url": "https://chattnext.onrender.com"
+    },
+    {
+      "id": "p5",
+      "name": "GroceMart",
+      "description": "Developed a responsive and user-friendly grocery e-commerce platform using React.js and Redux. Emphasized performance optimization and modern UI/UX principles to enhance user engagement.",
+      "src_url": "https://github.com/Rijas2004/grocemart",
+      "site_url": "https://grocemart.netlify.app"
     }
   ]
 }
