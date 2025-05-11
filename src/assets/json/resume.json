@@ -88,7 +88,7 @@
     {
       "id": "p5",
       "name": "GroceMart",
-      "description": "Developed a responsive and user-friendly grocery e-commerce platform using React.js and Redux. Emphasized performance optimization and modern UI/UX principles to enhance user engagement.",
+      "description": "Developed a responsive and user-friendly grocery e-commerce platform using React.js and Redux. Emphasized performance optimization and modern UI/UX principles to enhance user engagement. Used Tailwind CSS for designing purpose.",
       "src_url": "https://github.com/Rijas2004/grocemart",
       "site_url": "https://grocemart.netlify.app"
     },
