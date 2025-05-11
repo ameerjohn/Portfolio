@@ -91,6 +91,13 @@
       "description": "Developed a responsive and user-friendly grocery e-commerce platform using React.js and Redux. Emphasized performance optimization and modern UI/UX principles to enhance user engagement.",
       "src_url": "https://github.com/Rijas2004/grocemart",
       "site_url": "https://grocemart.netlify.app"
+    },
+    {
+     "id": "p6",
+      "name": "Conneqto",
+      "description": "Language exchange platform which the users can exchange their language by chats or video calls.Created using MERN Stack. NOTE: First-time load may take a few seconds due to free-tier deployment on Render. This delay is related to platform cold-start, not app performance.",
+      "src_url": "https://github.com/Rijas2004/conneqto",
+      "site_url": "https://conneqto.netlify.app"
     }
   ]
 }
