@@ -4,9 +4,6 @@ import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 import {
   MailOutline,
-  Facebook,
-  Twitter,
-  Instagram,
   Mouse,
 } from "@mui/icons-material";
 

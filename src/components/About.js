@@ -3,7 +3,6 @@ import { Element } from "react-scroll";
 import { motion, useAnimation } from "framer-motion";
 
 import classes from "./About.module.css";
-import rijas from "../assets/Images/Me/rijas.png";
 
 const About = () => {
   const aboutVariants = {
