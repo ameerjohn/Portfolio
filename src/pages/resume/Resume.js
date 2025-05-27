@@ -66,7 +66,7 @@ const Resume = () => {
         <div>
           <h4 className={classes.subheader}>Technical skills:</h4>
           <Grid container spacing={3}>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
               <div className={classes.list_heading}>Languages:</div>
               <ul className={classes.list}>
                 {resume?.technical_skills.programming_languages.map(
@@ -76,7 +76,7 @@ const Resume = () => {
                 )}
               </ul>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
               <div className={classes.list_heading}>Libraries:</div>
               <ul className={classes.list}>
                 {resume?.technical_skills.framework.map((frm, index) => (
@@ -84,7 +84,7 @@ const Resume = () => {
                 ))}
               </ul>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
               <div className={classes.list_heading}>CMS:</div>
               <ul className={classes.list}>
                 {resume?.technical_skills.cms.map((item, index) => (
@@ -92,7 +92,7 @@ const Resume = () => {
                 ))}
               </ul>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
               <div className={classes.list_heading}>Hosting Tools:</div>
               <ul className={classes.list}>
                 {resume?.technical_skills.hosting.map((item, index) => (
