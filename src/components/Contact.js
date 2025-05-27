@@ -46,7 +46,7 @@ const Contact = () => {
       "template_lq4mxek",
       templateParams,
       {
-        publicKey: "73BIfvgYmlfzd4CBH",
+        publicKey: "OQE0HOecqntm_AwW4",
       }
       );
       setFormSubmitted(true);
