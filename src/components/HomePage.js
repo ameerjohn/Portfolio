@@ -8,7 +8,6 @@ import {
 } from "@mui/icons-material";
 
 import classes from "./HomePage.module.css";
-import ME1 from "../assets/Images/Me/ME1.png";
 
 const HomePage = () => {
   const containerVariants = {

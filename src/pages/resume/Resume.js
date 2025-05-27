@@ -1,7 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
 import {
-  GitHub,
-  Link,
   LinkedIn,
   MailOutline,
   Phone,
@@ -10,9 +8,6 @@ import { Grid } from "@mui/material";
 import Divider from "@mui/material/Divider";
 
 import Json from "../../assets/json/resume.json";
-import STJ from "../../assets/Images/works/STJOSEPH.jpg";
-import JavaScript from "../../assets/Images/Certifications/Javascript.jpg";
-import ReactJS from "../../assets/Images/Certifications/React.jpg";
 import classes from "./Resume.module.css";
 
 const Resume = () => {
