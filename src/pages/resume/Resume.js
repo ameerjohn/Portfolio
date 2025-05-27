@@ -21,8 +21,20 @@ const Resume = () => {
     <div className={classes.overlay}>
       <div className={classes.header}>
         <div>
-          <h1 style={{ margin: 0 }}>{resume?.personal_details.name}</h1>
-          <h4 style={{ margin: "8px 0" }}>Frontend Developer</h4>
+          <h1 style={{ margin: 0 }}>{resume?.personal_details.name} <span style={{ fontSize: "12px" }}>(She/Her)</span></h1>
+          <h4 style={{ margin: "4px 0" }}>Web & Frontend Developer</h4>
+          
+           <div>
+            <LinkedIn />
+            <a
+              rel="noopener noreferrer"
+              href={resume?.personal_details.linkedin}
+              target="_blank"
+              className={classes["icon-code"]}
+            >
+              {resume?.personal_details.linkedin}
+            </a>
+          </div>
         </div>
         <div>
           <div>
@@ -43,17 +55,7 @@ const Resume = () => {
               {resume?.personal_details.mail}
             </a>
           </div>
-          <div>
-            <LinkedIn />
-            <a
-              rel="noopener noreferrer"
-              href={resume?.personal_details.linkedin}
-              target="_blank"
-              className={classes["icon-code"]}
-            >
-              {resume?.personal_details.linkedin}
-            </a>
-          </div>
+         <h5 style={{ margin: "4px 0" }}>Nationality : Indian</h5>
         </div>
       </div>
       <div style={{ padding: "0 20px 8px 20px" }}>

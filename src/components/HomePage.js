@@ -45,7 +45,7 @@ const HomePage = () => {
       >
         <div className={classes.content}>
           <span className={classes.hello}>Hello, I'm</span>
-          <h3 className={classes.name}>Ameerjohn</h3>
+          <h3 className={classes.name}>Ameerjohn<span className={classes.job}>(She/Her)</span></h3>
           <span className={classes.job}>
             Web & Frontend <span>Developer</span>
           </span>
