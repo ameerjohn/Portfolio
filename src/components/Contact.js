@@ -26,43 +26,42 @@ const Contact = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [controls]);
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    if (!name || !email || !message) {
-      setFormError("Please fill out all fields!");
-      setTimeout(() => setFormError(""), 2000);
-      return;
-    }
+const handleSubmit = async (event) => {
+  event.preventDefault();
+  if (!name || !email || !message) {
+    setFormError("Please fill out all fields!");
+    setTimeout(() => setFormError(""), 2000);
+    return;
+  }
 
-    const templateParams = {
-      from_name: "name",
-      from_email: "email",
-      message: "Hello!"
-    };
+  const templateParams = {
+    from_name: name,
+    from_email: email,
+    message: message
+  };
 
-    try {
-      await emailjs.send(
-         "service_4s6ghxk",
+  try {
+    await emailjs.send(
+      "service_4s6ghxk",
       "template_lq4mxek",
       templateParams,
-      {
-        publicKey: "OQE0HOecqntm_AwW4",
-      }
-      );
-      setFormSubmitted(true);
-      setName("");
-      setEmail("");
-      setMessage("");
-    } catch (error) {
-      console.error(error);
-      setFormError("Error sending email. Please try again.");
-    }
+      "OQE0HOecqntm_AwW4" // pass public key as string
+    );
+    setFormSubmitted(true);
+    setName("");
+    setEmail("");
+    setMessage("");
+  } catch (error) {
+    console.error(error);
+    setFormError("Error sending email. Please try again.");
+  }
 
-    setTimeout(() => {
-      setFormSubmitted(false);
-      setFormError("");
-    }, 3000);
-  };
+  setTimeout(() => {
+    setFormSubmitted(false);
+    setFormError("");
+  }, 3000);
+};
+
 
   const placeholderColor = "#fff";
   const buttonStyle = {
