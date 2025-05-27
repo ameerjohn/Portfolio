@@ -1,12 +1,32 @@
 {
-  "objective": "Aspiring MERN Stack Developer with a keen interest in crafting responsive and user-friendly web applications. Equipped with foundational skills in MongoDB, Express.js, React, and Node.js. Seeking an opportunity to leverage expertise in the MERN stack to contribute to innovative projects and collaborate with like-minded professionals in a dynamic work environment. Passionate about continuous learning and growth in the field of web development.",
+  "objective": "As a dedicated and professional Web & Front-End Developer, I have a sharp eye for detail and a strong passion for delivering high-quality, user-centric solutions. With a solid foundation in modern web technologies, I excel at creating dynamic, responsive, and visually stunning user interfaces.",
   "personal_details": {
-    "name": "Rijas Afradi",
-    "contact_no": "+91-7502820750",
-    "mail": "rijrijas@gmail.com",
-    "github": "https://github.com/Rijas2004",
-    "linkedin": "www.linkedin.com/in/rijas-afradi-160b56218"
+    "name": "Ameerjohn",
+    "contact_no": "+91-9566269878",
+    "mail": "amirjohn724@gmail.com",
+    "github": "https://github.com/ameerjohn",
+    "linkedin": "https://www.linkedin.com/in/ameerjohn-t-662982173/"
   },
+  "experience": [
+    {
+      "company": "Aximz Technologies Pvt. Ltd",
+      "role": "Web & Frontend Developer",
+      "fromto": "July 2019 to Present",
+      "place": "Chennai"
+    },
+    {
+      "company": "Doodleblue Innovations PVT LTD",
+      "role": "Frontend Developer",
+      "fromto": "Dec 2018 to May 2019",
+      "place": "Chennai"
+    },
+    {
+      "company": "Asterfone Technologies and PVT LTD",
+      "role": "UI Developer",
+      "fromto": "Oct 2017 to Oct 2018",
+      "place": "Chennai"
+    }
+  ],
   "education": [
     {
       "school": "SFS Matric Higher Secondary school",
@@ -27,77 +47,49 @@
       "studied": "Bachelor of Science in Computer Science (BSc CS)"
     }
   ],
-  "certifications": [
-    {
-      "name": "JavaScript Certification",
-      "domain": "Web Development",
-      "platform": "Sololearn",
-      "finished": "Jan'2023"
-    },
-    {
-      "name": "ReactJS Certification",
-      "domain": "Web Development",
-      "platform": "Sololearn",
-      "finished": "Feb'2023"
-    }
-  ],
-  "achievements": [
-    {
-      "college": "St.Joseph college",
-      "desc": "Participated in technical symposium at St.Joseph College, Trichy and awarded web development TECHX 2023 by holding third position."
-    }
-  ],
   "technical_skills": {
-    "programming_languages": ["HTML", "CSS", "Javascript"],
+    "programming_languages": ["HTML", "CSS", "Javascript", "Jquery", "Typescript", "JSON", "PHP"],
     "programming_tools": ["VScode"],
-    "framework": ["React.JS","Node.JS", "Express.JS"],
-    "database": ["MongoDB"]
+    "framework": ["Reactjs", "Vuejs", "Nextjs", "Boostarp", "Tailwindcss", "Materialize", "Laravel"],
+    "cms": ["Wordpress", "Elementor", "Woocommerce", "Wix", "Shopify", "Prestashop", "Squarespace"],
+    "hosting": ["CPanel", "WHM", "Plesk"],
+    "management": ["Git", "SVN"],
+    "design": ["Photoshop", "Illustrator"]
   },
   "projects": [
     {
       "id": "p1",
-      "name": "Portfolio",
+      "name": "Online Learning Portal",
       "client-used": {
         "language": "Javascript",
         "library": ["React.js", "Font-Awesome"]
       },
-      "description": "This portfolio website which you are seeing now is build by using React.js and material ui for materials and icons. If you want to contact me, you can contact me through the page located on the bottom of these site.",
-      "src_url": "https://github.com/Rijas2004/Portfolio"
+      "description": "Developed a responsive, user-friendly online learning portal for Fondbites, enabling seamless access to video lessons, downloadable materials, and a community forum.",
+      "site_url": "http://fondbites.com/"
     },
     {
       "id": "p2",
-      "name": "Food Ordering Site",
-      "description": "An application created with ReactJS and connected to Firebase for storage.",
-      "src_url": "https://github.com/Rijas2004/FoodOrder",
-      "site_url": "https://fullmeals.netlify.app"
+      "name": "Unified Identity Verification Platform",
+      "description": "Developed a scalable and secure identity verification platform integrating biometric authentication, liveness detection, and silent device verification.",
+      "site_url": "https://ezto.io/verify"
     },
     {
       "id": "p3",
-      "name": "Task Storager",
-      "description": "A small task storing app which is used for creating tasks and managing it.",
-      "src_url": "https://github.com/Rijas2004/TaskManager",
-      "site_url": "https://taskstorager.netlify.app"
-   },
+      "name": "Modern E-Commerce Platform for Designer Lighting Brands",
+      "description": "Built a responsive, visually rich e-commerce website for Inspired by Lighting, showcasing premium lighting collections from leading brands.",
+      "site_url": "http://inspiredbylighting.com"
+    },
     {
       "id": "p4",
-      "name": "Chatt Next",
-      "description": "A MERN stack Website in which the user can login or signup and can chat with other users.Used MERN and Socket and zustand for practice.      NOTE: Initially the loading time of the website will be slow because of the deploying website.",
-      "src_url": "https://github.com/Rijas2004/chatnextt",
-      "site_url": "https://chattnext.onrender.com"
+      "name": "Wholesale Distribution Website for Home & Kitchenware",
+      "description": "Developed a clean and functional website for H&A Trading UK to showcase and manage a wide range of wholesale kitchenware and home products.",
+      "site_url": "https://handatrading.uk/"
     },
     {
       "id": "p5",
-      "name": "GroceMart",
-      "description": "Developed a responsive and user-friendly grocery e-commerce platform using React.js and Redux. Emphasized performance optimization and modern UI/UX principles to enhance user engagement. Used Tailwind CSS for designing purpose.",
-      "src_url": "https://github.com/Rijas2004/grocemart",
-      "site_url": "https://grocemart.netlify.app"
-    },
-    {
-     "id": "p6",
-      "name": "Conneqto",
-      "description": "Language exchange platform which the users can exchange their language by chats or video calls.Created using MERN Stack. NOTE: First-time load may take a few seconds due to free-tier deployment on Render. This delay is related to platform cold-start, not app performance.",
-      "src_url": "https://github.com/Rijas2004/conneqto",
-      "site_url": "https://conneqto.netlify.app"
+      "name": "Service-Based Website for Pest Control Solutions",
+      "description": "Designed and developed a responsive website for Hi-Tech Pest Solution to promote pest control services across residential and commercial sectors.",
+      "site_url": "https://www.hitechpestsolution.com/"
     }
   ]
 }

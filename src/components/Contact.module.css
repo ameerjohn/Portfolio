@@ -1,5 +1,6 @@
 .contact {
-  color: lightgrey;
+  /*color: lightgrey;*/
+  color: #fff;
 }
 
 .title {
@@ -8,7 +9,7 @@
 
 .title span {
   font-size: 24px;
-  color: #ea4343;
+  color: #112A46;
   font-weight: 700;
 }
 
@@ -61,7 +62,7 @@
 
 .email h3 {
   font-size: 30px;
-  color: #ea4343;
+  color: #112A46;
 }
 
 .form {

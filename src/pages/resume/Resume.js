@@ -27,7 +27,7 @@ const Resume = () => {
       <div className={classes.header}>
         <div>
           <h1 style={{ margin: 0 }}>{resume?.personal_details.name}</h1>
-          <h4 style={{ margin: "8px 0" }}>MERN Stack Developer</h4>
+          <h4 style={{ margin: "8px 0" }}>Frontend Developer</h4>
         </div>
         <div>
           <div>
@@ -46,17 +46,6 @@ const Resume = () => {
               className={classes["icon-code"]}
             >
               {resume?.personal_details.mail}
-            </a>
-          </div>
-          <div>
-            <GitHub />
-            <a
-              rel="noopener noreferrer"
-              href={resume?.personal_details.github}
-              target="_blank"
-              className={classes["icon-code"]}
-            >
-              {resume?.personal_details.github}
             </a>
           </div>
           <div>
@@ -80,7 +69,7 @@ const Resume = () => {
         <div>
           <h4 className={classes.subheader}>Technical skills:</h4>
           <Grid container spacing={3}>
-            <Grid item xs={4}>
+            <Grid item xs={3}>
               <div className={classes.list_heading}>Languages:</div>
               <ul className={classes.list}>
                 {resume?.technical_skills.programming_languages.map(
@@ -90,7 +79,7 @@ const Resume = () => {
                 )}
               </ul>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={3}>
               <div className={classes.list_heading}>Libraries:</div>
               <ul className={classes.list}>
                 {resume?.technical_skills.framework.map((frm, index) => (
@@ -98,93 +87,81 @@ const Resume = () => {
                 ))}
               </ul>
             </Grid>
-            <Grid item xs={4}>
-              <div className={classes.list_heading}>Database:</div>
+            <Grid item xs={3}>
+              <div className={classes.list_heading}>CMS:</div>
               <ul className={classes.list}>
-                {resume?.technical_skills.database.map((dtb, index) => (
-                  <li key={index}>{dtb}</li>
+                {resume?.technical_skills.cms.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </Grid>
+            <Grid item xs={3}>
+              <div className={classes.list_heading}>Hosting Tools:</div>
+              <ul className={classes.list}>
+                {resume?.technical_skills.hosting.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+              <div className={classes.list_heading}>Project Management:</div>
+              <ul className={classes.list}>
+                {resume?.technical_skills.management.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+               <div className={classes.list_heading}>Design Tools:</div>
+              <ul className={classes.list}>
+                {resume?.technical_skills.design.map((item, index) => (
+                  <li key={index}>{item}</li>
                 ))}
               </ul>
             </Grid>
           </Grid>
         </div>
         <div>
-          <h4 className={classes.subheader}>Certifications:</h4>
-          <div className={classes.list_style_cert}>
-            {resume?.certifications.map((cert, index) => (
-              <div style={{ display: "list-item" }} key={index}>
-                <strong>{cert.name}</strong> {cert.domain && cert.domain} |{" "}
-                {cert.platform} | {cert.finished}.
-                <a href={index === 0 ? JavaScript : ReactJS} target="blank">
-                  <Link className={classes.cert_icon} />
-                </a>
-              </div>
+          <h4 className={classes.subheader}>Experience:</h4>
+            {resume?.experience.map((item, index) => (
+              <>
+                <div>
+                  <div className={classes.subheader1}>{item.company}<span className={classes.city}> {item.place}</span></div>
+                  <div className={classes.subheader2}>
+                    {item.role}
+                  </div>
+                  <p className={classes.description}>
+                   {item.fromto}
+                   
+                  </p>
+                </div>
+                <Divider component="ul" />
+                </>
             ))}
-          </div>
         </div>
-        <div>
-          <h4 className={classes.subheader}>Achievements:</h4>
-          {resume?.achievements.map((ach, index) => (
-            <Fragment key={index}>
-              <div
-                className={`${classes.subheader2} ${classes.list_style_achiev}`}
-              >
-                {ach.college}
-                <a rel="noopener noreferrer" href={STJ} target="_blank">
-                  <Link
-                    style={{ position: "absolute" }}
-                    className={classes.cert_icon}
-                  />
-                </a>
-              </div>
-              <p className={classes.description}>{ach.desc}</p>
-              {resume?.achievements.length - 1 !== index && <Divider />}
-            </Fragment>
-          ))}
-        </div>
+      
         <div>
           <h4 className={classes.subheader}>Education:</h4>
           <div>
             <div className={classes.subheader1}>
-              Bachelor of Science in Computer Science (BSc CS)
+              Master of Computer Application (MCA) with <b>81%</b>
             </div>
             <div className={classes.subheader2}>
-              Jamal Mohamed College
-              <small>(Bharathidasan University)</small>
+             Adaikalamatha Arts Science College, Thanjavur
             </div>
             <p className={classes.description}>
-              Pursuing Bachelor of Science in Computer Science in&nbsp;
-              <strong>Jamal Mohamed College (Bharathidasan University)</strong>
-              ,in the year of 2022-2025,
-              <br />
-              <span className={classes.city}>Trichy.</span>
+              2015-2017
             </p>
           </div>
           <Divider component="ul" />
           <div>
-            <div className={classes.subheader1}>HSC Education</div>
+            <div className={classes.subheader1}>
+              Bachelor of Computer Application (BCA) with <b>80%</b>
+            </div>
             <div className={classes.subheader2}>
-              SFS Matric Higher Secondary school
+             Bon Secours college for Women, Thanjavur
             </div>
             <p className={classes.description}>
-              Completed Higher Secondary Education (12th) with <b>76.4%</b> in
-              <strong> SFS Matric Higher Secondary school</strong>
-              ,<br />
-              <span className={classes.city}>Pudukkottai.</span>
+              2012-2015
             </p>
           </div>
-          <Divider component="ul" />
-          <div>
-            <div className={classes.subheader1}>SSLC Education</div>
-            <div className={classes.subheader2}>
-              SFS Matric Higher Secondary school
-            </div>
-            <p className={classes.description}>
-              Completed SSLC (10th) with <b>74.6%</b> in
-              <strong> SFS Matric Higher Secondary school</strong>,<br />
-              <span className={classes.city}>Pudukkottai.</span>
-            </p>
-          </div>
+        
         </div>
       </div>
     </div>

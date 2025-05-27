@@ -49,9 +49,9 @@ const HomePage = () => {
       >
         <div className={classes.content}>
           <span className={classes.hello}>Hello, I'm</span>
-          <h3 className={classes.name}>Rijas</h3>
+          <h3 className={classes.name}>Ameerjohn</h3>
           <span className={classes.job}>
-            MERN STACK <span>Developer</span>
+            Web & Frontend <span>Developer</span>
           </span>
           <div className={classes.btnnav}>
             <ScrollLink className={classes.hellobtn} to="contact" smooth={true}>
@@ -65,15 +65,15 @@ const HomePage = () => {
         </div>
         <motion.div className={classes.avatar} variants={avatarVariants}>
           <div className={classes.main}>
-            <img src={ME1} alt="MyPic" className={classes.mypic} />
+            {/*<img src={ME1} alt="MyPic" className={classes.mypic} />*/}
           </div>
-          <span className={classes.one}>
+         <span className={classes.one}>
             <span className={classes.inlayer}></span>
           </span>
-          <span className={classes.two}>
+         <span className={classes.two}>
             <span className={classes.inlayer}></span>
           </span>
-          <span className={classes.three}>
+        <span className={classes.three}>
             <span className={classes.inlayer}></span>
           </span>
           <span className={classes.four}>
@@ -83,11 +83,11 @@ const HomePage = () => {
             <span className={classes.inlayer}></span>
           </span>
           <h3 className={classes.stroketxt}>
-            <span>Rijas</span>
+            <span>Ameer</span>
           </h3>
         </motion.div>
         <motion.div className={classes.social} variants={socialVariants}>
-          <ul>
+         {/* <ul>
             <li>
               <NavLink
                 to={"https://www.facebook.com/rijasafradi.rijasafradi.7"}
@@ -109,13 +109,13 @@ const HomePage = () => {
                 <Instagram style={{ fill: "white" }} />
               </NavLink>
             </li>
-          </ul>
+          </ul>*/}
         </motion.div>
         <motion.div className={classes.mail} variants={mailVariants}>
           <ScrollLink className={classes.mouseicon} to="about" smooth={true}>
             <Mouse style={{ fill: "white" }} />
           </ScrollLink>
-          <NavLink className={classes.link}>rijrijas@gmail.com</NavLink>
+          <NavLink className={classes.link}>amirjohn724@gmail.com</NavLink>
         </motion.div>
         <hr />
       </motion.div>

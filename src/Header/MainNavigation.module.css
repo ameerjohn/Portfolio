@@ -9,7 +9,8 @@ header {
 }
 
 header.scrolled {
-  background-color: #3f3f3f;
+  /*background-color: #3f3f3f;*/
+  background-color: #112A46;
   width: 100%;
   top: 0;
 }
@@ -52,7 +53,7 @@ header .code {
 }
 
 .link:hover {
-  color: #ea4343;
+  color: #fff;
 }
 
 @media screen and (max-width: 769px) {

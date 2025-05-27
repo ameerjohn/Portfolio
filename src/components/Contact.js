@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { EmailOutlined, Send } from "@mui/icons-material";
 import { Button, TextField } from "@mui/material";
 import { motion, useAnimation } from "framer-motion";
+import emailjs from "emailjs-com";
 
-import classes from "./Contact.module.css";
+import classes from "./Contact.module.css"; // Your CSS module
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -15,87 +16,61 @@ const Contact = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
       const formSection = document.getElementById("contact");
-
-      if (formSection) {
-        const formSectionTop = formSection.offsetTop;
-        const triggerPoint = formSectionTop - window.innerHeight + 100;
-
-        if (scrollPosition >= triggerPoint) {
-          controls.start("visible");
-        } else {
-          controls.start("hidden");
-        }
-      }
+      if (!formSection) return;
+      const triggerPoint = formSection.offsetTop - window.innerHeight + 100;
+      controls.start(window.scrollY >= triggerPoint ? "visible" : "hidden");
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [controls]);
 
-  const placeholderColor = "lightGray";
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (!name || !email || !message) {
+      setFormError("Please fill out all fields!");
+      setTimeout(() => setFormError(""), 2000);
+      return;
+    }
+
+    const templateParams = {
+      from_name: "name",
+      from_email: "email",
+      message: "Hello!"
+    };
+
+    try {
+      await emailjs.send(
+         "service_4s6ghxk",
+      "template_lq4mxek",
+      templateParams,
+      {
+        publicKey: "73BIfvgYmlfzd4CBH",
+      }
+      );
+      setFormSubmitted(true);
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.error(error);
+      setFormError("Error sending email. Please try again.");
+    }
+
+    setTimeout(() => {
+      setFormSubmitted(false);
+      setFormError("");
+    }, 3000);
+  };
+
+  const placeholderColor = "#fff";
   const buttonStyle = {
-    backgroundColor: "#ea4343",
+    backgroundColor: "#112A46",
     padding: "15px",
     fontFamily: "Josefin Sans",
     borderRadius: "5px",
     marginTop: "10px",
-  };
-
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  };
-
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleMessageChange = (event) => {
-    setMessage(event.target.value);
-  };
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
-      setFormError("Please fill out all fields!");
-      setTimeout(() => {
-        setFormError("");
-      }, 2000);
-      return;
-    }
-
-    await fetch(
-      "https://portfolio-messages-2531f-default-rtdb.firebaseio.com/message.json",
-      {
-        method: "post",
-        body: JSON.stringify({ name, email, message }),
-      }
-    )
-      .then((response) => {
-        if (response.status === 200) {
-          setName("");
-          setEmail("");
-          setMessage("");
-          setFormError("");
-          setFormSubmitted(true);
-        }
-      })
-      .catch((err) => {
-        setFormError("Error submitting form. Please try again.");
-        setFormSubmitted(true);
-      });
-
-    setName("");
-    setEmail("");
-    setMessage("");
-    setFormError("");
-    setFormSubmitted(true);
-
-    setTimeout(() => {
-      setFormSubmitted(false);
-    }, 2000);
   };
 
   const formVariants = {
@@ -104,7 +79,7 @@ const Contact = () => {
   };
 
   return (
-    <motion.div className={classes.contact} animate={controls}>
+    <motion.div className={classes.contact} animate={controls} id="contact">
       <div className={classes.title}>
         <span>Get in Touch</span>
         <h3>Connect with me</h3>
@@ -112,13 +87,13 @@ const Contact = () => {
       <div className={classes.contact_details}>
         <div className={classes.left}>
           <p className={classes.text}>
-            Please fill out the form on this section to contact with me. Or Send
-            a mail
+            Please fill out the form on this section to contact with me. Or
+            Send a mail
           </p>
           <div className={classes.email}>
             <EmailOutlined className={classes.email_icon} />
             <span>Email</span>
-            <h3>rijrijas@gmail.com</h3>
+            <h3>amirjohn724@gmail.com</h3>
           </div>
         </div>
         <motion.form
@@ -139,7 +114,7 @@ const Contact = () => {
             margin="dense"
             fullWidth
             value={name}
-            onChange={handleNameChange}
+            onChange={(e) => setName(e.target.value)}
             placeholder="Your Name"
             InputProps={{
               style: {
@@ -150,12 +125,12 @@ const Contact = () => {
           />
           <TextField
             variant="outlined"
-            type={"email"}
+            type="email"
+            margin="dense"
             fullWidth
             value={email}
-            onChange={handleEmailChange}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Your Email"
-            margin="dense"
             InputProps={{
               style: {
                 color: placeholderColor,
@@ -167,11 +142,11 @@ const Contact = () => {
             variant="outlined"
             multiline
             rows={4}
+            margin="dense"
             fullWidth
             value={message}
-            onChange={handleMessageChange}
+            onChange={(e) => setMessage(e.target.value)}
             placeholder="Your Message"
-            margin="dense"
             InputProps={{
               style: {
                 color: placeholderColor,

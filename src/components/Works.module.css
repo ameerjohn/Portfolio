@@ -22,7 +22,7 @@
 
 .main_title span {
   font-size: 24px;
-  color: #ea4343;
+  color: #112A46;
   font-weight: 700;
   letter-spacing: -0.2px;
 }
@@ -34,13 +34,15 @@
 }
 
 .card {
-  background-color: #333232 !important;
+  /*background-color: #333232 !important;*/
+  background-color: #112A46 !important;
   padding: 40px;
 }
 
 .cardtitle {
   font-weight: 700;
-  font-size: 36px;
+  /*font-size: 36px;*/
+  font-size: 24px;
   color: #fff;
 }
 

@@ -17,9 +17,9 @@ hr {
 }
 
 .content .name {
-  font-size: 150px;
+  font-size: 80px;
   margin: 25px 0;
-  color: #ea4343;
+  color: #112A46;
   letter-spacing: -0.2px;
 }
 
@@ -47,12 +47,12 @@ hr {
   cursor: pointer;
   color: #fff;
   display: inline-block;
-  background-color: #ea4343;
+  background-color: #112A46;
   font-weight: 700;
   position: relative;
   padding: 20px 70px 20px 45px;
   border-radius: 6px;
-  border: 2px solid #ea4343;
+  border: 2px solid #112A46;
 }
 
 .btnnav .hellobtn:hover {
@@ -163,7 +163,7 @@ hr {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #ea4343;
+  background-color: #112A46;
 }
 
 .avatar .stroketxt {

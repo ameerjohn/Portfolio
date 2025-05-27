@@ -2,7 +2,9 @@
 
 body {
   margin: 0;
-  background-color: #3c3c3c;
+  /*background-color: #3c3c3c;*/
+   background-color: #8DA4F9;
+   /*background-color: #7767b7;*/
   overflow-x: hidden;
   font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;

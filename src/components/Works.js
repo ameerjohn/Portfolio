@@ -75,19 +75,7 @@ const Works = () => {
                       <p className={classes.cardcontent}>{data.description}</p>
                     </CardContent>
                     <CardActions className={classes.action_btn}>
-                      <Button
-                        className={classes.btn}
-                        color="error"
-                        variant="outlined"
-                      >
-                        <Link
-                          className={classes.link}
-                          to={data.src_url}
-                          target="blank"
-                        >
-                          Show Src Code
-                        </Link>
-                      </Button>
+                     
                       {data.site_url && (
                         <Button
                           className={classes.btn}

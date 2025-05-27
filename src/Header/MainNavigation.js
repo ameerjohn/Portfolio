@@ -66,7 +66,7 @@ const MainNavigation = () => {
           transition={{ duration: 0.5 }}
         >
           <NavLink className={classes.link} to="/">
-            &lt;Rijas/&gt;
+            &lt;Ameer/&gt;
           </NavLink>
         </motion.code>
         {responsive ? (
