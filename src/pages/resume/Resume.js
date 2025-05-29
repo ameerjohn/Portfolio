@@ -56,6 +56,7 @@ const Resume = () => {
             </a>
           </div>
          <h5 style={{ margin: "4px 0" }}>Nationality : Indian</h5>
+         <h5 style={{ margin: "4px 0" }}>Languages : English, Tamil</h5>
         </div>
       </div>
       <div style={{ padding: "0 20px 8px 20px" }}>
@@ -128,7 +129,9 @@ const Resume = () => {
                    
                   </p>
                 </div>
-                <Divider component="ul" />
+                {index !== resume.experience.length - 1 && (
+                  <Divider component="ul" sx={{ marginBottom: '10px' }} />
+                )}
                 </>
             ))}
         </div>
@@ -146,7 +149,7 @@ const Resume = () => {
               2015-2017
             </p>
           </div>
-          <Divider component="ul" />
+          <Divider component="ul" sx={{ marginBottom: '10px' }}/>
           <div>
             <div className={classes.subheader1}>
               Bachelor of Computer Application (BCA) with <b>80%</b>

@@ -2,6 +2,7 @@ hr {
   position: relative;
   top: 43rem;
   width: 60%;
+  border-color: transparent;
 }
 .content {
   position: absolute;

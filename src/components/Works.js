@@ -78,6 +78,7 @@ const Works = () => {
                      
                       {data.site_url && (
                         <Button
+                          sx={{ backgroundColor: '#FFF' }}
                           className={classes.btn}
                           color="error"
                           variant="contained"
